@@ -15,6 +15,7 @@
 
     <!-----local css js file inclusion----->
     <link rel="stylesheet" href="hompage.css">
+    <link rel="stylesheet" href="projects.css">
     <script src="hompage.js"></script>
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -40,10 +41,10 @@
                     <div class="left"></div>
                     <div class="right"></div>
                 </div>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="projects.html"><i class="fa fa-book"></i>Projects</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html"><i class="fa fa-user"></i>About Me</a>
                 </li>
                 <li class="nav-item">
@@ -60,28 +61,58 @@
     <!------------------nav bar end------------------------>
 
 
-    <div class="intro">
-        <div class="introtext">
-            <h1>Welcome !</h1>
-            <p>I'm</p>&nbsp;
-            <h5>Suriyanarayanan Ravi</h5>
-            <h6>Bachelor of Technology - Information Technology</h6>
-        </div>
-    </div>
+    <!-----------------------CONTENT START------------------------->
 
-    <div class="box">
-        <div class="profile_picture_container">
-            <div class="profile_picture_layer">
-                <img class="profile_picture" src="suriya water bg final.jpg">
+    <div class="project_content">
+        <div class="box">
+            <div class="project1">
+                <div class="project_title">
+                    <p>Optical Management Solution</p>
+                </div>
+                <div class="project_images">
+                    <div class="project_image1"><img src="project1 image1.jpg"></div>
+                    <div class="project_image2"><img src="project1 image2.jpg"></div>
+                </div>
+                <div class="project_description">
+                    <p>Created using Java(JavaFX, Swing), SQLite, itextpdf</p>
+                </div>
+                <div class="project_explanation">
+                    <p>This Desktop Application created for the purpose to store and
+                        manage the patient's eye examination details in an easy way. The records are properly stored
+                        using
+                        sqlite database and
+                        the details of each patient can be taken down in PDF format with predefined design.</p>
+                </div>
+                <div class="project_details">
+                    <button class="project_details_button">Details</button>
+                </div>
+            </div>
+            <!---------------------project break------------------->
+            <div class="project2">
+                <div class="project_title">
+                    <p>Covid-19 Social Distancing Monitoring Tool using Faster R-CNN</p>
+                </div>
+                <div class="project_images">
+                    <div class="project_image1"><img src="project2 image1.jpg"></div>
+                    <div class="project_image2"><img src="project2 image2.jpg"></div>
+                </div>
+                <div class="project_description">
+                    <p>Created using Python, Detectron</p>
+                </div>
+                <div class="project_explanation">
+                    <p>This Python Tool created for the purpose to check social distancing among people in public places
+                        are followed or not using object detection algorithm and alerting them if they fail to follow.
+                        Faster R-CNN in this tool is implementing using Facebook's Detectron package. 
+                        This tool uses Transfer Learning Technique.
+                        </p>
+                </div>
+                <div class="project_details">
+                    <button class="project_details_button">Details</button>
+                </div>
             </div>
         </div>
-        <div class="about_me">
-            <h1>Who am I ?</h1>
-            <p>I'm a technology enthusiast who is willing to learn new technologies
-                that emerge in this world. I like programming and more. Here is my <a>resume</a></p>
-        </div>
     </div>
-
+    <!-----------------------CONTENT END--------------------------->
 
     <!---------------------------------footer----------------------------->
     <footer>

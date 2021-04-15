@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-image: linear-gradient(to right, rgba(105, 7, 105, 0.541), rgba(51, 71, 55, 0.774));
+  }
+.content{
+    
+    font-family: cursive;
+    width: 100%;
+    height: auto;
+    margin: 25px;
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    flex-direction: column;
+}
+.linkedin{
+    display: flex;
+    order: 1;
+    pad: 20px;
+    justify-content: start;
+}
+.twitter{
+    display: flex;
+    order: 2;
+    pad: 20px;
+    justify-content: start;
+}
+.facebook{
+    display: flex;
+    order: 3;
+    pad: 20px;
+    justify-content: start;
+}
+.instagram{
+    display: flex;
+    order: 4;
+    pad: 20px;
+    justify-content: start;
+}
+.mail{
+    display: flex;
+    order: 4;
+    pad: 20px;
+    justify-content: start;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    fill: white;
+    
+    margin: 10px;
+}
+.social_text{
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social_text p{
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Varela Round';
+}
+.social_text a{
+    color: white;
+}
+.social_text a:hover{
+    color: rgb(65, 253, 228);
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .content{
+        height: 400px;
+    }
+
+    .linkedin{
+        pad: 10px;
+    }
+    .twitter{
+        pad: 10px;
+    }
+    .facebook{
+        pad: 10px;
+    }
+    .instagram{
+        pad: 10px;
+    }
+    .mail{
+        pad: 10px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        fill: white;
+        
+        margin: 5px;
+    }
+    .social_text p{
+        color: whitesmoke;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .social_text a{
+        font-size: 10px;
+    }
+    
+}
