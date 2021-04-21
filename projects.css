@@ -111,6 +111,13 @@ body{
     visibility: hidden;
     background-color: rgba(255, 255, 255, 0.151);
 }
+body{
+    width: 100%;
+    display: table;
+  }
+  body > footer{
+    display: table-row;
+  }
 
 @media screen and (max-width: 800px){
 
