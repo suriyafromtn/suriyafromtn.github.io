@@ -4,10 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+html{
+  height: 100%;
+}
 body{
+  min-height: 100%;
+  margin: 0;
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to right, rgba(105, 7, 7, 0.541), rgba(51, 71, 71, 0.774));
+
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -330,6 +337,13 @@ footer{
   font-size: 30px;
   letter-spacing: 1px;
 }
+
+body{
+  display: table;
+}
+body > footer{
+  display: table-row;
+}
 /*----------------------------footer end-------------------------------------*/
 
 
@@ -404,6 +418,7 @@ footer{
     font-family: 'Passion one';
     font-size: 20px;
     letter-spacing: 1px;
+    bottom: 0px;
   }
 
 }
