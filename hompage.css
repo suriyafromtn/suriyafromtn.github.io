@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 html{
   height: 100%;
@@ -28,7 +29,12 @@ i {
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
+  font-family: "Secular One";
 }
+.navbar-logo:hover{
+  color: rgb(151, 245, 252);
+}
+
 .navbar-mainbg{
   background-color: #d6c2d236;
   padding: 0px;
@@ -196,7 +202,7 @@ i {
 
 /*-----------------------------  card ------------------------------*/
 .intro {
-  width: 100%;
+  width: 98%;
   padding: 10px;
   margin: 20px 10px;
   height: 300px;
@@ -212,7 +218,7 @@ i {
   font-size: 150px;
   text-shadow: 5px 3px rgba(58, 65, 0, 0.863);
   font-family: 'Passion one';
-  animation: 1s slide-up;
+  animation: 2s slide-up;
 }
 .intro p{
   display: inline-block;
@@ -222,10 +228,10 @@ i {
 .intro h5{
   display: inline-block;
   color:rgba(255, 248, 248, 0.938);
-  font-size: 30px;
+  font-size: 40px;
   text-shadow: 1px 0px rgba(58, 65, 0, 0.863);
   font-family: 'Zilla Slab Highlight';
-  animation: 2s slide-up;
+  animation: 3s slide-up;
   cursor: pointer;
 }
 .intro h6{
@@ -285,9 +291,9 @@ i {
 }
 .about_me p a{
   background-color: rgba(255, 255, 255, 0.842);
-  border-radius: 2px;
-  padding-left: 2px;
-  padding-right: 2px;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   cursor: pointer;
 }
 
