@@ -1,22 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Passion+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
-html{
+html {
   height: 100%;
 }
-body{
+body {
   min-height: 100%;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(to right, rgba(105, 7, 7, 0.541), rgba(51, 71, 71, 0.774));
-
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(105, 7, 7, 0.541),
+    rgba(51, 71, 71, 0.774)
+  );
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -24,47 +27,47 @@ i {
   margin-right: 10px;
 }
 /*----------multi-level-accordian-menu------------*/
-.navbar-logo{
+.navbar-logo {
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
   font-family: "Secular One";
 }
-.navbar-logo:hover{
-  color: rgb(151, 245, 252);
+.navbar-logo:hover {
+  color: rgb(226, 0, 215);
 }
 
-.navbar-mainbg{
+.navbar-mainbg {
   background-color: #d6c2d236;
   padding: 0px;
 }
-#navbarSupportedContent{
+#navbarSupportedContent {
   overflow: hidden;
   position: relative;
 }
-#navbarSupportedContent ul{
+#navbarSupportedContent ul {
   padding: 0px;
   margin: 0px;
 }
-#navbarSupportedContent ul li a i{
+#navbarSupportedContent ul li a i {
   margin-right: 10px;
 }
 #navbarSupportedContent li {
   list-style-type: none;
   float: left;
 }
-#navbarSupportedContent ul li a{
+#navbarSupportedContent ul li a {
   color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 15px;
-    display: block;
-    padding: 20px 20px;
-    transition-duration:0.6s;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    position: relative;
+  position: relative;
 }
-#navbarSupportedContent>ul>li.active>a{
+#navbarSupportedContent > ul > li.active > a {
   color: #1fa9b3;
   background-color: transparent;
   transition: all 0.1s;
@@ -82,16 +85,16 @@ i {
   font-weight: 900;
   transition: 0.5s;
 }
-#navbarSupportedContent .active>a:not(:only-child):after {
+#navbarSupportedContent .active > a:not(:only-child):after {
   transform: rotate(90deg);
 }
-.hori-selector{
-  display:inline-block;
-  position:absolute;
+.hori-selector {
+  display: inline-block;
+  position: absolute;
   height: 100%;
   top: 0px;
   left: 0px;
-  transition-duration:0s;
+  transition-duration: 0s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background-color: rgba(255, 255, 255, 0.815);
   border-top-left-radius: 15px;
@@ -99,66 +102,64 @@ i {
   margin-top: 10px;
 }
 .hori-selector .right,
-.hori-selector .left{
+.hori-selector .left {
   position: absolute;
   width: 25px;
   height: 25px;
   background-color: rgba(255, 255, 255, 0);
   bottom: 10px;
 }
-.hori-selector .right{
+.hori-selector .right {
   right: -25px;
 }
-.hori-selector .left{
+.hori-selector .left {
   left: -25px;
 }
 .hori-selector .right:before,
-.hori-selector .left:before{
-  content: '';
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #94869100;
+.hori-selector .left:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #94869100;
 }
-.hori-selector .right:before{
+.hori-selector .right:before {
   bottom: 0;
-    right: -25px;
+  right: -25px;
 }
-.hori-selector .left:before{
+.hori-selector .left:before {
   bottom: 0;
-    left: -25px;
+  left: -25px;
 }
 
-@media(min-width: 1000px){
+@media (min-width: 1000px) {
   .navbar-expand-custom {
-      -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   .navbar-expand-custom .navbar-nav {
-      -ms-flex-direction: row;
-      flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .navbar-expand-custom .navbar-toggler {
-      display: none;
+    display: none;
   }
   .navbar-expand-custom .navbar-collapse {
-      display: -ms-flexbox!important;
-      display: flex!important;
-      -ms-flex-preferred-size: auto;
-      flex-basis: auto;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
   }
-  
 }
 
-
-@media (max-width: 1000px){
-  #navbarSupportedContent ul li a{
+@media (max-width: 1000px) {
+  #navbarSupportedContent ul li a {
     padding: 12px 30px;
   }
-  .hori-selector{
+  .hori-selector {
     margin-top: 0px;
     margin-left: 10px;
     border-radius: 0;
@@ -166,25 +167,25 @@ i {
     border-bottom-left-radius: 25px;
   }
   .hori-selector .left,
-  .hori-selector .right{
+  .hori-selector .right {
     right: 10px;
   }
-  .hori-selector .left{
+  .hori-selector .left {
     top: -25px;
     left: auto;
   }
-  .hori-selector .right{
+  .hori-selector .right {
     bottom: -25px;
   }
-  .hori-selector .left:before{
+  .hori-selector .left:before {
     left: -25px;
     top: -25px;
   }
-  .hori-selector .right:before{
+  .hori-selector .right:before {
     bottom: -25px;
     left: -25px;
   }
-  .navbar-logo{
+  .navbar-logo {
     padding-left: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -199,7 +200,6 @@ i {
   margin-left: 10px;
 }
 
-
 /*-----------------------------  card ------------------------------*/
 .intro {
   width: 98%;
@@ -208,34 +208,34 @@ i {
   height: 300px;
   overflow: hidden;
 }
-.introtext{
-  margin:  auto;
+.introtext {
+  margin: auto;
   height: auto;
   text-align: center;
 }
-.intro h1{
+.intro h1 {
   color: rgb(60, 223, 174);
   font-size: 150px;
   text-shadow: 5px 3px rgba(58, 65, 0, 0.863);
-  font-family: 'Passion one';
+  font-family: "Passion one";
   animation: 2s slide-up;
 }
-.intro p{
+.intro p {
   display: inline-block;
   font-size: 25px;
   color: white;
 }
-.intro h5{
+.intro h5 {
   display: inline-block;
-  color:rgba(255, 248, 248, 0.938);
+  color: rgba(255, 248, 248, 0.938);
   font-size: 40px;
   text-shadow: 1px 0px rgba(58, 65, 0, 0.863);
-  font-family: 'Zilla Slab Highlight';
+  font-family: "Zilla Slab Highlight";
   animation: 3s slide-up;
   cursor: pointer;
 }
-.intro h6{
-  font-family: 'Times New Roman', Times, serif;
+.intro h6 {
+  font-family: "Times New Roman", Times, serif;
   color: rgb(214, 240, 250);
   font-size: 20px;
 }
@@ -243,7 +243,7 @@ i {
 @keyframes slide-up {
   from {
     margin-top: 50%;
-    height: 300%; 
+    height: 300%;
   }
 
   to {
@@ -254,19 +254,14 @@ i {
 
 /*---------------------box css---------------------------*/
 .box {
-  box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-;
-
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 
   display: flex;
   flex-direction: row;
-  height: calc(100% - 30%); 
+  height: calc(100% - 30%);
   width: 90%;
   margin: 50px auto;
   background: rgba(255, 255, 255, 0.692);
@@ -274,22 +269,23 @@ i {
   padding: 20px;
 }
 
-.about_me{
+.about_me {
   margin-top: auto;
   margin-bottom: auto;
   text-align: justify;
   padding: 20px;
   order: 1;
 }
-.about_me h1{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.about_me h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 700;
 }
-.about_me P{
-  font-family: 'Roboto';
+.about_me P {
+  font-family: "Roboto";
   font-size: 20px;
 }
-.about_me p a{
+.about_me p a {
   background-color: rgba(255, 255, 255, 0.842);
   border-radius: 5px;
   padding-left: 5px;
@@ -298,74 +294,64 @@ i {
 }
 
 /*--------------profile picture start--------------*/
-.profile_picture_container{
-  
+.profile_picture_container {
   height: auto;
   width: auto;
   margin: 1px;
   order: 2;
 }
-.profile_picture_layer{
-  
+.profile_picture_layer {
   width: 500px;
   height: 471px;
   margin: 10px;
   flex-direction: row;
   border: 0px white solid;
 }
-.profile_picture{
-  
+.profile_picture {
   width: 500px;
   height: 471px;
 }
 /*-------------profile picture end------------*/
 
-
-
 /*------------------------------footer start--------------------------------------*/
-footer{
+footer {
   bottom: 0;
   width: 100%;
   height: 100px;
   background-color: rgba(170, 199, 223, 0.363);
 }
-.foot{
+.foot {
   text-align: center;
   margin-bottom: 0;
   color: rgb(12, 12, 12);
   font-size: 15px;
   padding-top: 40px;
 }
-.foot h6 p{
+.foot h6 p {
   display: inline;
   color: rgb(255, 255, 255);
-  font-family: 'Passion one';
+  font-family: "Passion one";
   font-size: 30px;
   letter-spacing: 1px;
 }
 
-body{
+body {
   display: table;
 }
-body > footer{
+body > footer {
   display: table-row;
 }
 /*----------------------------footer end-------------------------------------*/
 
-
-
-
-
-
 /*----------------------------------------------------for mobile view----------------------------*/
 @media screen and (max-width: 800px) {
-  
-  .about_me{
+  .about_me {
     padding: 10px;
     text-align: justify;
   }
-  .about_me h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  .about_me h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     font-weight: 500;
   }
   .intro {
@@ -375,57 +361,55 @@ body > footer{
     height: 180px;
     overflow: hidden;
   }
-  .intro h1{
+  .intro h1 {
     font-size: 60px;
     text-shadow: 3px 2px rgba(58, 65, 0, 0.863);
   }
-  .intro p{
+  .intro p {
     font-size: 15px;
   }
-  .intro h5{
+  .intro h5 {
     font-size: 25px;
   }
-  .intro h6{
+  .intro h6 {
     font-size: 13px;
   }
-  .box{
+  .box {
     display: block;
-    min-height: 500px;  
+    min-height: 500px;
     width: 95%;
     margin: 10px auto;
     background: rgba(255, 255, 255, 0.692);
     border-radius: 5px;
     padding: 0px;
   }
-  .profile_picture_container{
+  .profile_picture_container {
     padding: 0px;
     width: 100%;
     align-items: center;
     display: inherit;
   }
-  .profile_picture_layer{
+  .profile_picture_layer {
     width: 290px;
     height: 273px;
     padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
   }
-  .profile_picture{    
+  .profile_picture {
     width: 290px;
     height: 273px;
     display: block;
   }
-  .about_me P{
+  .about_me P {
     font-size: 15px;
   }
-  .foot h6 p{
+  .foot h6 p {
     display: inline;
     color: rgb(255, 255, 255);
-    font-family: 'Passion one';
+    font-family: "Passion one";
     font-size: 20px;
     letter-spacing: 1px;
     bottom: 0px;
   }
-
 }
-
